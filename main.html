@@ -1,0 +1,9 @@
+<h1 style="text-align:center">Select Your Template </h1>
+				<div class="row" ng-controller="imageController">
+				<div class="col-md-4" ng-repeat="image in imageGallery">
+				  <a href="#" class="thumbnail" ng-click="setback(image.url);">
+					<img ng-src={{image.url}} alt="Pulpit Rock" style="width:250px;height:150px">
+				  </a>
+				</div>
+				
+				</div>

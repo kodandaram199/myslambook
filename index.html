@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="pdr" lang="en">
+
+
+	<head>
+	
+	
+		<title>Welcome MySlam</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Celebrate Your Relationship">
+		<meta name="keywords" content="Slam,Slambook">
+		<meta name="author" content="Kodanda Rama Durgarao Poluri">
+		
+		<!--
+		<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+		-->
+		
+
+		
+		
+		<!-- Angularjs script -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<!-- Angularjs route -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+
+<!-- Bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Bootstrap jquery  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Bootstrap javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Angular app script pdr -->
+<script src="scripts/script.js"></script>
+
+<!-- custom css pdr -->
+<link rel="stylesheet" href="css/style.css"/>
+
+
+		
+
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+			}
+		</script>
+
+		<style>
+			.nav{color:white;font-size:120%;text-align:center;}
+			.nav:hover,.nav:active,.nav:visited{color:white}
+		</style>
+
+			
+		
+		
+	</head>
+	
+	
+	<body>
+				<div class="container-fluid pdrnav">
+					<div class="navbar-header">
+					  <a class="navbar-brand" href="#/">Online Slam Book</a>
+					</div>
+					<div class="pull-right">
+						<a href="#" class="nav">Sign In</a>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="container-fluid">
+				
+				
+
+				<!-- side navigation -->
+				<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="#about">About</a>
+				  <a href="#contact">Contact</a>
+				</div>
+
+				
+
+				<!--side button code -->
+				<div id="main">
+				  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				</div>
+				
+				
+				<ng-view></ng-view>
+				
+				<!-- main content -->
+				
+				
+
+
+	</body>
+	
+	
+</html>
