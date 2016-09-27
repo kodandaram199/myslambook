@@ -6,15 +6,15 @@ var app = angular.module('pdr',["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "main.html"
+        templateUrl : "templates/main.html"
     })
 	.when("/about",
 	{
-		templateUrl : "about.html"
+		templateUrl : "templates/about.html"
 	})
 	.when("/slam",
 	{
-		tempalteUrl: "slam.html"
+		tempalteUrl: "templates/slam.html"
 	});
     
 });
